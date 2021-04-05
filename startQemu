@@ -1,4 +1,5 @@
 #!/bin/bash
-export QEMU_AUDIO_DRV=alsa
-qemu-system-i386 -enable-kvm -hda hd_qemu.img -cdrom zenglOX.iso -boot d -m 26 -gdb tcp::1234 -S -net nic -net user -soundhw sb16 -display sdl -usbdevice mouse -usbdevice keyboard -k en-us
+#export QEMU_AUDIO_DRV=alsa
+qemu-system-i386 -hda hd_qemu.img -cdrom zenglOX.iso -boot d -m 26 -net nic -net user -soundhw sb16 -k en-us
+#qemu-system-i386 -enable-kvm -hda hd_qemu.img -cdrom zenglOX.iso -boot d -m 26 -gdb tcp::1234 -S -net nic -net user -soundhw sb16 -display sdl -usbdevice mouse -usbdevice keyboard -k en-us
 #qemu-system-i386 -hda hd_qemu.img -cdrom zenglOX.iso -boot d -m 26 -gdb tcp::1234 -S -net nic -net user -soundhw sb16 -display sdl -usbdevice mouse -usbdevice keyboard -k en-us

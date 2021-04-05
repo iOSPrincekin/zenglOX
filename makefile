@@ -1,6 +1,6 @@
 #makefile for zenglOX
 
-GCC_PATH = /mnt/zenglOX/opt/cross/bin
+GCC_PATH = /Users/lee/Desktop/Computer_Systems/zenglOX-1/zenglOX_v0.0.1/opt/cross/bin
 AS = @$(GCC_PATH)/i586-elf-as
 CC = @$(GCC_PATH)/i586-elf-gcc
 
